@@ -1,0 +1,488 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    max-width: 1500px;
+}
+
+@font-face {
+    font-family: "Fuzz";
+    src: url("./FuzzyBubbles-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sans";
+    src: url("./SourceSansPro-Regular.ttf");
+}
+
+header{
+    margin-top: 20%;
+}
+
+.home {
+    height: 500px;
+} /* si coloco un height al div la set time function no me afecta el display de la de abajo*/
+
+.btn-stick {
+    margin: 5% 0% 0% 2%;
+    display: flex;
+    flex-direction: column;
+    max-width: 3.5%;
+    z-index: 8;
+    position: fixed;
+}
+
+.btn-stick button {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border-style:solid;
+    border-color: rgb(119, 34, 75);
+    margin-bottom: 18%;
+    background-color: rgb(244, 244, 248);
+}
+
+
+.btn-stick button span {
+    display: none;
+}
+
+.btn-stick button:hover span{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(119, 34, 75);
+    margin: -5% 0% 0% 2%;
+    letter-spacing: 0.12ch;
+ } /* asi hago aprecer texto onhover en un boton, le coloco el span y no display*/
+
+
+.btn-stick button:hover {
+    position: sticky;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-top: 40%;
+    cursor: url("pointer.png"), auto;
+    width: 150px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+main {
+    margin: -12% 0% 35% 0%;
+}
+
+
+.home h2, .home h3, .home p {
+    z-index: 3;
+    margin-left: 20%;
+    font-family: "Fuzz";
+    color: rgb(119, 34, 75);
+    font-size: 55px;
+}
+
+.home h3, .aboutext, .resume, .boton  {
+    font-family: "Sans";
+    color: rgb(14, 4, 9);
+    font-size: 25px;
+    letter-spacing: 0.18ch;
+}
+
+.home p {
+    margin-top: 4%;
+    padding: 0.7%; /* con un solo valor padding acomodo a todos lados el content dentro del botton o div*/
+    max-width: 25%;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    background-color: aliceblue;
+    border-color: rgb(119, 34, 75);
+    border-style:none;
+    border-radius: 20px;
+    filter: drop-shadow(2px 1px 12px rgb(119, 34, 75));
+    display: none;
+}
+
+#kep {
+    margin-left: 38%;
+}
+
+#ach {
+    margin-left: 58%;
+}
+
+.home img {
+    top: 0px; /* coloco esto y no tengo que poner tanto o margin negativo hacia arriba*/
+    max-width: 100%;
+    z-index: 1;
+    position: absolute;
+    mix-blend-mode:screen;
+    opacity: 20%;
+    filter: grayscale(100%); /* asi coloco la imagen en black & white*/
+}
+
+.about, .portfolio, .resume, .contact{
+    margin: 15% 10% -5% 20%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+
+.abt h3, .port h3, .rsm h3, .contact h3 {
+   width: 100%;
+   text-align: center;
+   margin: 15% 0% -10% 0%;
+   font-family: "Fuzz";
+   color: rgb(119, 34, 75);
+   font-size: 38px;
+   font-weight: 600;
+   letter-spacing: 0.22ch;
+}
+
+
+.rsm h3 {
+    margin-top: 5%;
+}
+
+.abt h3 {
+    margin-top: 20%;
+}
+
+.meimg img {
+    max-width: 50%;
+    margin-top: 10%;
+}
+.aboutext {
+    max-width: 80%;
+    margin-left: -9%;
+    font-weight: 600;
+}
+
+.aboutext span {
+    color: rgb(119, 34, 75);;
+}
+
+.portfolio{
+    margin: 15% 10% 5% 20%;
+    display:inline-block; /* para que hagan column deben ir en inine block*/
+    flex-direction: column;
+    column-count: 2;
+}
+.portfolio div img {
+    max-width: 80%;
+    margin-top: 5%;
+}
+
+.credit, .lan {
+    margin-top: 15%;
+    max-width: 120%;
+}
+
+.portfolio div p, .resume div h4, .studies span {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  color:  rgb(119, 34, 75);
+  background-color: white;
+  font-family: "Sans";
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.resume {
+    max-width: 100%;
+    text-align: left;
+    color: rgb(14, 4, 9);
+    font-weight: 600;
+}
+
+.resume div {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.studies{
+    width: 70%;
+}
+.code p{
+    display: block;
+}
+
+.code a{
+   color: rgb(119, 34, 75);
+}
+
+.pro div p {
+    margin-top: 0%;
+}
+
+.contact {
+    max-width: 100%;
+    display: block;
+}
+
+.contact article{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 18%;
+}
+
+.boton div {
+   display: inline-flex;
+   margin: 0% 0% 15% 0%;
+}
+
+.boton {
+    width: 40%;
+    margin-left: 6%;
+    font-weight: 600;
+}
+
+.btn1 p, .btn2 p, .btn3 p {
+   padding-left: 5%;
+   text-decoration:underline;
+}
+
+.btn1 button, .btn2 button, .btn3 button {
+    margin-top: 3%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: rgb(119, 34, 75);
+    border-style: solid;
+ }
+
+ .form {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin: 0% 5% 0% 5%;
+ }
+
+input, textarea {
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-bottom: 8%;
+    padding-left: 2%;
+    font-size: 15px;
+}
+
+#msg {
+    height: 170px;
+    padding: auto;
+}
+
+#sub {
+    color: rgb(119, 34, 75);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    background-color: rgb(233, 230, 231);
+    border-color:  rgb(119, 34, 75);
+    border-style: solid;
+    filter: drop-shadow(1px 3px 5px rgb(119, 34, 75));
+    cursor: url("./pointer.png"), auto;
+}
+
+#sub:checked {
+    color: black;
+}
+
+footer{
+    margin: -23% 15% 5% 20%;
+    text-align: center;
+}
+
+footer button{
+    width: 70px;
+    height: 70px;
+    margin-right: 5%;
+    background-color: hsl(193, 100%, 96%);
+    border-color: rgb(119, 34, 75);
+    border-style: solid ;
+    border-width: 0.2ch;
+    color: rgb(119, 34, 75);
+    border-radius: 50%;
+    font-size: 35px; /* con este incremento el tamaño de la fa font i*/
+}
+
+footer button:hover {
+    cursor: url("pointer.png"), auto;
+    color: hsl(193, 100%, 96%);
+    background-color: rgb(119, 34, 75);;
+}
+
+footer p{
+    margin-top: 4%;
+    font-family: "Sans";
+    color: rgb(14, 4, 9);
+    font-size: 22px;
+    letter-spacing: 0.13ch;
+    font-weight: 600;
+}
+
+footer p span {
+    color: rgb(119, 34, 75);
+}
+
+
+@media (min-width : 400px) and (max-width : 800px)  {
+    
+    body {
+
+        max-width: 700px;
+    }
+    
+    .home {
+        height: 700px;
+    } /* si coloco un height al div la set time function no me afecta el display de la de abajo*/
+    
+    
+    .btn-stick button {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 30%;
+    }
+    
+    .btn-stick button:hover span{
+        font-size: 15px;
+     } 
+    
+    
+    .btn-stick button:hover {
+        padding-left: 10%;
+        padding-top: 80%;
+        width: 110px;
+    }
+    
+    main {
+        margin: -12% 2% 35% 0%;
+    }
+    
+    
+    .home h2, .home h3, .home p {
+        margin-left: 20%;
+        font-size: 38px;
+    }
+    
+    .home h3, .aboutext, .resume, .boton  {
+        font-size: 21px;
+    }
+    
+    .home p {
+        margin-top: 8%;
+        font-size: 18px;
+    }
+    
+    
+    .about, .portfolio, .resume, .contact{
+        margin: 15% 10% 0% 20%;
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    .abt h3, .port h3, .rsm h3, .contact h3 {
+       font-size: 30px;
+    }
+    
+    
+    .rsm h3 {
+        margin-top: 15%;
+    }
+    
+    .abt h3 {
+        margin-top: -15%;
+    }
+    
+    .meimg img {
+        max-width: 60%;
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+    .aboutext {
+        max-width: 90%;
+        margin-left: 0%;
+    }
+    
+    .aboutext span {
+        color: rgb(119, 34, 75);;
+    }
+    
+    .portfolio{
+        display:inline-block; /* para que hagan column deben ir en inine block*/
+        column-count: 1;
+    }
+    
+    
+    .portfolio div p, .resume div h4, .studies span {
+      width: 100%;
+    }
+    
+    .resume {
+        text-align: left;
+    }
+    
+    .resume div {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    
+    .studies{
+        width: 80%;
+    }
+
+    .pro div h4 {
+       font-size: 20px;
+    }
+    
+
+    .contact article{
+        display: block;
+        justify-content: left;
+        margin-top: 25%;
+    }
+    
+    .boton div {
+       display: inline-flex;
+       margin: 0% 0% 15% 0%;
+    }
+    
+    .boton {
+        width: 80%;
+    }
+    
+
+     .form {
+        width: 90%;
+     }
+    
+    
+    footer button{
+        width: 50px;
+        height: 50px;
+        font-size: 28px; /* con este incremento el tamaño de la fa font i*/
+    }
+    
+    footer p{
+        font-size: 18px;
+    }
+    
+}
+
+
+@media (min-width : 810px) and (max-width : 1300px)  {
+    
+    
+.home img {
+    top: 0px; /* coloco esto y no tengo que poner tanto o margin negativo hacia arriba*/
+    width: 100%;
+    height: 80%;
+}
+
+}
