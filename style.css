@@ -169,13 +169,22 @@ main {
     column-count: 2;
 }
 .portfolio div img {
-    max-width: 80%;
+    max-width: 85%;
     margin-top: 5%;
 }
 
-.credit, .lan {
+.credit , .lan {
     margin-top: 15%;
-    max-width: 120%;
+    max-width: 150%;
+}
+
+.portfolio div p i {
+   margin-left: 50%;
+   cursor: url("./pointer.png"), auto;
+}
+
+#commerce, #ccard {
+    max-width: 90%;
 }
 
 .portfolio div p, .resume div h4, .studies span {
