@@ -29,3 +29,15 @@ setTimeout(function(){
   function siteFour() {
     location.href = "https://jcbotero.github.io/c-card-form/";
   }
+
+  function git() {
+    location.href = "https://github.com/jcbotero";
+  }
+
+  function link() {
+    location.href = "https://www.linkedin.com/in/juan-camilo-botero-gutierrez-31009559/";
+  }
+
+  function insta() {
+    location.href = "https://www.instagram.com/jucaob10/";
+  }
