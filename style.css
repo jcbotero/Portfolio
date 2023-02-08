@@ -173,6 +173,10 @@ main {
     margin-top: 5%;
 }
 
+#space {
+   margin-bottom: 3%;
+}
+
 .credit , .lan {
     margin-top: 15%;
     max-width: 150%;

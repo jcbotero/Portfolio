@@ -14,7 +14,7 @@ setTimeout(function(){
 
 
    function siteOne() {
-    location.href = "https://jcbotero.github.io/Advice-generator/";
+    location.href = "https://space-tourism-multipage.vercel.app/";
   }
    
   function siteTwo() {
