@@ -27,7 +27,7 @@ setTimeout(function(){
   }
   
   function siteFour() {
-    location.href = "https://jcbotero.github.io/c-card-form/";
+    location.href = "https://jcbotero.github.io/Chat-app-landing/";
   }
 
   function git() {
