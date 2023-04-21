@@ -174,13 +174,18 @@ main {
 }
 
 .bvc {
-    min-width: 100%;
-   margin-bottom: 10%;
+   
+   margin-bottom: 17%;
 }
 
 
+.bvc p{
+    min-width: 100%;
+   padding-top: 5%;
+}
+
 #bvc {
-   margin-top: 10%;
+   margin-top: 15%;
    min-width: 100%;
 }
 
@@ -195,7 +200,7 @@ main {
 }
 
 .portfolio div p i {
-   margin-left: 50%;
+   margin-left: 20%;
    cursor: url("./pointer.png"), auto;
 }
 
