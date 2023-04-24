@@ -1,4 +1,27 @@
 
+let english = document.querySelectorAll("#btnstick, #home, #about, #poty, #resu, #contac")
+let span = document.querySelectorAll("#btnstick2, #home2, #about2, #poty2, #resu2, #contac2")
+
+function spanish() {
+  for (i = 0 ; i < english.length; i ++) {
+  english[i].style.display = " none ";
+  }
+  for (j = 0 ; j < span.length; j ++) {
+    span[j].style.display = "block";
+    }
+}
+
+
+function american() {
+  for (i = 0 ; i < english.length; i ++) {
+  english[i].style.display = " block ";
+  }
+  for (j = 0 ; j < span.length; j ++) {
+    span[j].style.display = "none";
+    }
+}
+
+
 
 setTimeout(function(){
     document.getElementById('imp').style.display = "block";
@@ -11,6 +34,20 @@ setTimeout(function(){
  setTimeout(function(){
     document.getElementById('ach').style.display = "block";
    }, 6000);
+
+   
+
+setTimeout(function(){
+  document.getElementById('imp2').style.display = "block";
+ }, 2000); /* asi hago aparecer un div despues de 2 seconds*/
+
+setTimeout(function(){
+  document.getElementById('kep2').style.display = "block";
+ }, 4000);
+
+setTimeout(function(){
+  document.getElementById('ach2').style.display = "block";
+ }, 6000);
 
 
    function siteOne() {

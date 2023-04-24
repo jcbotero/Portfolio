@@ -14,6 +14,20 @@ body {
     src: url("./SourceSansPro-Regular.ttf");
 }
 
+.flags {
+    margin: -15% 8% 0% 0%;
+}
+
+.flags img {
+    position: relative;
+    max-width: 4%;
+    float: right;
+    margin-right: 1%;
+    cursor: url("pointer.png"), auto;
+    z-index: 2; /*cuadno el pointer no funciona, debo ponerle un z index mas alto */
+}
+
+
 header{
     margin-top: 20%;
 }
@@ -103,11 +117,11 @@ main {
     display: none;
 }
 
-#kep {
+#kep, #kep2 {
     margin-left: 38%;
 }
 
-#ach {
+#ach, #ach2 {
     margin-left: 58%;
 }
 
@@ -360,12 +374,18 @@ footer p span {
 }
 
 
-@media (min-width : 400px) and (max-width : 800px)  {
+@media (min-width : 100px) and (max-width : 800px)  {
     
     body {
 
         max-width: 700px;
     }
+    
+.flags img {
+    max-width: 7%;
+    float: right;
+    margin-right: 0%;
+}
     
     .home {
         height: 700px;
@@ -387,6 +407,10 @@ footer p span {
         padding-left: 10%;
         padding-top: 80%;
         width: 110px;
+    }
+
+    #kep2 {
+      min-width: 200px;
     }
     
     main {

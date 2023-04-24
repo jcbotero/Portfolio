@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <section class="btn-stick">
+        <section class="btn-stick" id="btnstick">
             <h1 style="display:none;">Display menu</h1>
             <button onClick="document.getElementById('home').scrollIntoView();"><i class="fa-solid fa-house"></i><span>Home</span></button> 
             <button onClick="document.getElementById('about').scrollIntoView();"><i class="fa-sharp fa-solid fa-person"></i><span> About Me</span></button>
@@ -20,14 +20,34 @@
             <button onClick="document.getElementById('resu').scrollIntoView();"><i class="fa-sharp fa-solid fa-graduation-cap"></i><span>Resume</span></button>
             <button onClick="document.getElementById('contac').scrollIntoView();"><i class="fa-solid fa-phone"></i><span>Contact</span></button>
         </section><!--el .scrollIntoview() hace que al darle click al boton me muestre esa section de la web-->
+          <section style="display:none" class="btn-stick" id="btnstick2" >
+            <h1 style="display:none;">Display menu</h1>
+            <button onClick="document.getElementById('home2').scrollIntoView();"><i class="fa-solid fa-house"></i><span>Inicio</span></button> 
+            <button onClick="document.getElementById('about2').scrollIntoView();"><i class="fa-sharp fa-solid fa-person"></i><span> Sobre Mi</span></button>
+            <button onClick="document.getElementById('poty2').scrollIntoView();"><i class="fa-solid fa-suitcase"></i><span>Portafolio</span></button>
+            <button onClick="document.getElementById('resu2').scrollIntoView();"><i class="fa-sharp fa-solid fa-graduation-cap"></i><span>CV</span></button>
+            <button onClick="document.getElementById('contac2').scrollIntoView();"><i class="fa-solid fa-phone"></i><span>Contacto</span></button>
+        </section><!--el .scrollIntoview() hace que al darle click al boton me muestre esa section de la web-->
     </header>
     <main>
+        <section class="flags">
+                <img src="american.jpg" alt="american" onclick="american()">         
+                <img src="spanish.jfif" alt="spanish" onclick="spanish()">
+        </section>
         <section class="home" id="home">
             <h2><span>Hi!!</span> I'm Juan Camilo</h2>
             <h3>Front-End oriented developer looking for new opportunities to:</h3> 
             <p id="imp">Improve & pratice my skills</p>
             <p id="kep">keep growing forward</p>
             <p id="ach">Achive my professional goals as a tech developer</p>
+            <img src="back.jpg" alt="paisaje">
+        </section>
+         <section style="display: none;" class="home" id="home2">
+            <h2><span>Hola!!</span> Soy Juan Camilo</h2>
+            <h3>Desarrollador Front-End buscando nuevas oportunidades para:</h3> 
+            <p id="imp2">Practicar y mejorar mis habilidades</p>
+            <p id="kep2">Seguir creciendo profesionalmente</p>
+            <p id="ach2">Lograr mi metas profesionales cómo desarrollador tech</p>
             <img src="back.jpg" alt="paisaje">
         </section>
         <section class="abt" id="about">
@@ -37,9 +57,23 @@
                     <img src="perfil.jpg" alt="perfil">
                 </div>
                 <div class="aboutext">
-                    <p>Hello. I'm a colombian Junior Front-End, i have developed skills in <span>HTML5, CSS, JAVASCRIPT, REACT Js & GIT/GITHUB</span>. And i am willing to learn more programming resources.</p>
+                    <p>Hello. I'm a colombian Junior Front-End, i have developed skills in <span>HTML5, CSS, JAVASCRIPT, REACT Js, NEXT js & GIT/GITHUB</span>. And i am willing to learn more programming resources.</p>
                     <p>Besides, throw my personal and professional experience, i'have obteined some soft skills such as <span>TEAM WORK, UNDERPRESSURE OUTCOME, COMMITMENT, FLEXIBILITY & GROWING MINDSET.</span></p>
                     <p><span>PHONE:</span>+057 3229487649</p>
+                    <p><span>EMAIL:</span>jucaob10@hotmail.com</p>
+                </div>
+            </article>
+        </section>
+        <section class="abt" id="about2" style="display: none;">
+            <h3>Sobre mi</h3>
+            <article class="about">
+                <div class="meimg">
+                    <img src="perfil.jpg" alt="perfil">
+                </div>
+                <div class="aboutext">
+                    <p>Hola. Soy un desarrollador Front-End colombiano, he adquirido habilidades en <span>HTML5, CSS, JAVASCRIPT, REACT Js, NEXT Js & GIT/GITHUB</span>. y estoy dispuesto a aprender nuevas tecnologías.</p>
+                    <p>Además, a través de mi experiencia personal y profesional, he obtenido algunas habilidades blandas cómo <span>TRABAJO EN EQUIPO, RESULTADOS BAJO PRESIÓN, COMPROMISO, FLEXIBIILIDAD & MENTALIDAD DE CRECIMIENTO.</span></p>
+                    <p><span>TELÉFONO:</span>+057 3229487649</p>
                     <p><span>EMAIL:</span>jucaob10@hotmail.com</p>
                 </div>
             </article>
@@ -47,9 +81,9 @@
         <section class="port" id="poty">
             <h3>Portfolio</h3>
             <article class="portfolio">
-                <div>
-                    <img src="bvc.jpg" alt="bvc" id="bvc" class="bvc" >
-                    <p>Stock Market Financial page. React/Next Js <span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteFive()"></i></span></p>
+                <div class="bvc">
+                    <img src="bvc.jpg" alt="bvc" id="bvc"  >
+                    <p>Stock Market Financial page.React/Next Js<span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteFive()"></i></span></p>
                 </div>
                 <div>
                     <img src="tip calculator.png" alt="tip">
@@ -57,11 +91,32 @@
                 </div>
                 <div>
                     <img src="space.jpg" alt="space" id="space" >
-                    <p>Tourism Space Multipage. React/Next Js <span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteOne()"></i></span></p>
+                    <p>Tourism Space Multipage. React/Next Js<span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteOne()"></i></span></p>
                 </div>
                 <div class="lan">
                     <img id="commerce" src="E-commerce.jpg" alt="landing">
                     <p>E-commerce landing page <span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteThree()"></i></span></p>
+                </div>
+            </article>
+        </section>
+        <section style="display: none;" class="port" id="poty2">
+            <h3>Portafolio</h3>
+            <article class="portfolio">
+                <div class="bvc">
+                    <img src="bvc.jpg" alt="bvc" id="bvc"  >
+                    <p>Página sobre el mercado de valores.React/Next Js<span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteFive()"></i></span></p>
+                </div>
+                <div>
+                    <img src="tip calculator.png" alt="tip">
+                    <p>Calculadora de propinas por persona<span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteTwo()"></i></span></p>
+                </div>
+                <div>
+                    <img src="space.jpg" alt="space" id="space" >
+                    <p>Multipágina de turismo espacial. React/Next Js<span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteOne()"></i></span></p>
+                </div>
+                <div class="lan">
+                    <img id="commerce" src="E-commerce.jpg" alt="landing">
+                    <p>Página de inicio E-commerce <span><i style="color: rgb(116, 114, 114);" class="fa-solid fa-link" onclick="siteThree()"></i></span></p>
                 </div>
             </article>
         </section>
@@ -92,6 +147,33 @@
                 </div>
             </article>
         </section>
+        <section style="display: none;" class="rsm" id="resu2">
+            <h3>Hoja de Vida</h3>
+            <article class="resume">
+                <div class="studies">
+                    <h4>Estudios</h4>
+                    <p>Profesionales: <span>Negocios Internacionales 2012</span></p>
+                    <h4>Code Academy:</h4>
+                    <div class="code">
+                      <p>Javascript 2022 <a href="./certficiado java scritp.pdf" target="_blank">certificado</a></p>
+                      <p>CSS 2022 <a href="./certificado CSS.pdf" target="_blank">certificado</a></p> <!--target _blank hace que al darle click me abra otra pestaña para el file-->
+                      <p>GIT & GitHub 2022 <a href="./certificado Git & GitHub.pdf" target="_blank">certificado</a></p>
+                      <p>Html <a href="./certificado html.pdf" target="_blank">certificado</a></p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <h4>Experiencia Profesional</h4>
+                    <div>
+                      <h4>Gestor de capitales en activos financieros 2014 al presente (medio tiempo).</h4>
+                      <p>- Análisis financiero y económico. <br>- Investigación de la situación financiera y económica de empresas y países.</p>
+                    </div>
+                    <div>
+                        <h4>BVC(Bolsa de valores de Colombia) Administrador de oficina 2012.</h4>
+                        <p>- Servicio al cliente. <br>- Venta y promoción de cursos de inversión. <br>- Agendamiento y ejecución de conferencias grupales.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
         <section class="contact" id="contac">
             <h3>Contact Me</h3>
              <article class="boton">
@@ -114,6 +196,31 @@
                     <input name="contact" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" onfocus="this.value=' '" placeholder="Your Email" required>
                     <textarea name="contact" id="msg" form="formsg" type="text" onfocus="this.value=' '" placeholder="Message" required></textarea> <!--es un textarea si quiero que deje un msj mas largo, el form me dice a cual forma pertenece-->
                     <input name="contact" pattern=".*\S.{20,}.*"  id="sub" type="submit"  value="SEND" required>
+                </form> <!--Pra poder hacer que los msj lleguen a mi correo usé formspree.io-->
+             </article><!--coloco mi pag de registro en action de la form... method post... y a cada input le doy un name para que funcione-->
+        </section> <!--https://formspree.io/forms/xdovngyl/integration  esta es mi cuenta en la pag -->
+        <section style="display: none;" class="contact" id="contac2">
+            <h3>Contáctame</h3>
+             <article class="boton">
+                <div class="btn1">
+                    <button><i class="fa-solid fa-phone"></i></button>
+                    <p>+057 3229487649</p>
+                </div>
+                <div class="btn2">
+                    <button><i class="fa-solid fa-envelope"></i></button>
+                    <p>jucaob10@hotmail.com</p>
+                </div>
+                <div class="btn3">
+                    <button><i class="fa-solid fa-location-pin"></i></button>
+                    <p>Ibagué - Colombia</p>
+                </div>
+             </article>
+             <article class="form">
+                <form action="https://formspree.io/f/xdovngyl" method="post"  id="formsg">
+                    <input name="contact" type="text" onfocus="this.value=' '" placeholder="Tu Nombre" required>
+                    <input name="contact" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" onfocus="this.value=' '" placeholder="Tu correo" required>
+                    <textarea name="contact" id="msg" form="formsg" type="text" onfocus="this.value=' '" placeholder="Mensaje" required></textarea> <!--es un textarea si quiero que deje un msj mas largo, el form me dice a cual forma pertenece-->
+                    <input name="contact" pattern=".*\S.{20,}.*"  id="sub" type="submit"  value="ENVIAR" required>
                 </form> <!--Pra poder hacer que los msj lleguen a mi correo usé formspree.io-->
              </article><!--coloco mi pag de registro en action de la form... method post... y a cada input le doy un name para que funcione-->
         </section> <!--https://formspree.io/forms/xdovngyl/integration  esta es mi cuenta en la pag -->
