@@ -51,7 +51,7 @@ setTimeout(function(){
 
 
    function siteOne() {
-    location.href = "https://space-tourism-multipage.vercel.app/";
+    location.href = "https://todo-app-jcbotero.vercel.app/";
   }
    
   function siteTwo() {
