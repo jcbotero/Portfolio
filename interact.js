@@ -55,7 +55,7 @@ setTimeout(function(){
   }
    
   function siteTwo() {
-    location.href = "https://jcbotero.github.io/Tip-Calculator/";
+    location.href = "https://todo-app-psi-three.vercel.app/";
   }
    
   
