@@ -51,7 +51,7 @@ setTimeout(function(){
 
 
    function siteOne() {
-    location.href = "https://todo-app-jcbotero.vercel.app/";
+    location.href = "https://improved-rock-paper-scissors-game.vercel.app/";
   }
    
   function siteTwo() {
