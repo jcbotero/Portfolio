@@ -60,7 +60,7 @@ setTimeout(function(){
    
   
   function siteThree() {
-    location.href = "https://jcbotero.github.io/E-commerce-product-page/";
+    location.href = "https://multi-step-form-eta-five.vercel.app/";
   }
   
   function siteFour() {
