@@ -51,7 +51,7 @@ setTimeout(function(){
 
 
    function siteOne() {
-    location.href = "https://improved-rock-paper-scissors-game.vercel.app/";
+    location.href = "https://stock-investment-challenge.vercel.app/";
   }
    
   function siteTwo() {
